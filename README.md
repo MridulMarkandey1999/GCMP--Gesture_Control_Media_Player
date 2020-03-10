@@ -9,6 +9,26 @@ Software that will recognize human hand gestures and operate the VLC media playe
 
 3. 	To connect the Gesture Recognition system to control the VLC Media Player.
 
+## Prerequisites:
+1. You must have **opencv-contrib-python** installed in your system. In case you don't have then **clone or download** this project and    type these commands in command prompt/terminal.
+
+      $ cd handy-master
+      $ pip install -r requirements.txt
+
+2. You must have python3 installed in your system.
+
+3. You should be ready with dataset of sample images to be used for face recognition system. If images are in grayscale then the program    will execute faster.Give your path of dataset in the code.
+
+#### To execute facial recogniton code:
+
+   $python3 face_unlock.py
+
+#### To execute hand gesture recogniton code:
+
+   $ python test.py
+   
+   **NOTE: When the program starts, it'll pop open a web cam feed and you have to place a part of your hand in the rectangle shown and press the key 'a' to calibrate the system with your skin color and the detection process will start.**
+   
 ## Module 1: Implementation of Face Recognition Locking/Unlocking system
 
 The project begins with the face recognition of the authorized user. A model is trained by images of a person, i.e., the authorized person. As soon as that person’s face comes into the region of interest, a message pops up on to the screen with the name of the person and the program control goes on to the next module. So basically, this step focuses on the authentication using face recognition.
